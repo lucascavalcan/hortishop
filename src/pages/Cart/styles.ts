@@ -4,6 +4,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Table = styled.div`
@@ -25,5 +27,36 @@ export const TableHeadColumn = styled.th<{width?: number}>`
     text-align: left;
 
 `;
+
+export const BackButton = styled.div`
+    margin-top:30px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:block;
+    cursor:pointer;
+    justify-content: flex-start;
+
+    &:hover {
+        background-color:#32a345;
+    }
+`;
+
+export const CleanButton = styled.div`
+    margin-top:15px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#f00;
+    color:#FFF;
+    display:block;
+    cursor:pointer;
+    justify-content: flex-start;
+
+    &:hover {
+        opacity: 0.8;
+    }
+`;
+
 
 

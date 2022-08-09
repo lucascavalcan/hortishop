@@ -4,6 +4,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: all ease .5s;
 
 `;
 
@@ -29,9 +31,9 @@ export const Area = styled.div`
 export const Image = styled.div`
     width:200px;
     height:200px;
-    background-color:#EEE;
+    background-color:#eee;
     border-radius:100px;
-    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+    box-shadow:0px 0px 50px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 
     img {

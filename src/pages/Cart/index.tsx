@@ -1,15 +1,22 @@
 import * as C from "./styles";
+import {useNavigate} from "react-router-dom";
 import { Theme } from "../../components/Theme";
 import {TableItem} from "../../components/TableItem";
 
 import { Fruit } from "../../types/Fruit";
 
 import {UseAppSelector} from "../../redux/hooks/useAppSelector";
-import { Card } from "../../components/Card";
 
 export const Cart = () => {
 
     const card = UseAppSelector(state => state.cart);
+
+    const navigate = useNavigate();
+
+    function handleBackButton() {
+        navigate(-1);
+    }
+   
 
     return (
         <Theme>
@@ -37,7 +44,11 @@ export const Cart = () => {
                         
                 </tbody>
                 </C.Table>
+
+                <C.BackButton onClick={handleBackButton}>Voltar para o início</C.BackButton>
+                <C.CleanButton>Limpar carrinho</C.CleanButton>
             </C.Container>
         </Theme>
     )
 }
+

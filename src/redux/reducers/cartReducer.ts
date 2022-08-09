@@ -1,10 +1,11 @@
+import { ListItemSecondaryAction } from "@mui/material";
 import {createSlice} from "@reduxjs/toolkit";
 import { Fruit } from "../../types/Fruit";
 
 export const slice = createSlice({
     name: "cart",
     initialState: {
-        items: [] 
+        items: []
     },
     reducers: {
         setItems: (state, action) => {

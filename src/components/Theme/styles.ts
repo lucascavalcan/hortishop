@@ -5,6 +5,6 @@ export const Container = styled.div`
 `;
 
 export const Page = styled.div`
-
+    min-height: 100vh;
 `;
 

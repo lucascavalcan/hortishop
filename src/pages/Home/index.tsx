@@ -3,6 +3,7 @@ import * as C from "./styles";
 import { api } from "../../api";
 import { Theme } from "../../components/Theme";
 import { ListItem } from "../../components/ListItem";
+import { Modal } from "../Modal";
 import { Fruit } from "../../types/Fruit";
 import {Link} from "react-router-dom";
 
@@ -46,7 +47,6 @@ export const Home = () => {
                                 <ListItem data={item} key={index}/>
                             ))}
                         </div>
-                        <Link to="/cart">Carrinho</Link>
                         </>
                     }
                     
